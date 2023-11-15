@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.logo {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-link img {
+  width: 100px; /* Đổi kích thước của logo */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+  display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
+}
+
+/* lang swtich */
+
+.en-link img {
+  width: 30px;
+  display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* ---- */
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 20px;
+  font-weight: bold; /* In đậm các mục trong menu */
+}
+.menu li:first-child {
+  margin-left: 100px; /* Đẩy phần "Activities" sang phải 10px */
+}
+
+/*---------------------------- Tìm kiếm---------------------------------------------- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-container input {
+  width: 500px; /* Giảm 50px để làm cho input vừa khít với button */
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #000000;
+  border-radius: 0 20px 20px 0; /* Điều chỉnh góc */
+  font-weight: bold; /* In đậm các mục trong menu */
+}
+
+.search-container button {
+  background-color: #f9f9f9;
+  color: #696969;
+  border: none;
+  border-radius: 20px 0 0 20px; /* Điều chỉnh góc */
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.search-container button i {
+  font-size: 18px;
+}
+
+/* footer */
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #2fbb89;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #2fbb89;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #201c1c;
+  text-decoration: none;
+  font-weight: 300;
+  color: #111312;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #271d1d;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #110e0e;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #2fbb89;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/*  pj */
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: auto;
+  padding: auto;
+  margin: 20px;
+  box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.video {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+.progress-container {
+  display: inline-block;
+  position: relative;
+  justify-content: flex-start;
+}
+.progress-bar {
+  height: 25px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #2fbb89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-content {
+  font-size: 14px;
+  color: #fff;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.icon {
+  margin-top: 25px;
+  margin-left: 8px;
+}
+
+.btn-pj {
+  width: 100px;
+  height: 45px;
+  margin: 20px 10px 0 34px;
+  color: #fff;
+  background: #2fbb89;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  z-index: 1;
+}
+.btn-pj:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.btn-pj:hover {
+  color: black;
+}
+.btn-pj a {
+  text-decoration-line: none;
+  text-decoration-color: #e0e0e0;
+}
