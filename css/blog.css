@@ -603,5 +603,9 @@ ul {
 	border-radius: 15px;
 	margin-left: 5px;
  }
+
+ p {
+  text-align: justify;
+ }
  
   
