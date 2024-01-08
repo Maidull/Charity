@@ -64,7 +64,6 @@ header a {
 .language-container {
   display: flex;
   align-items: center;
-  margin-left: 200px;
 }
 
 #drop-content {
@@ -290,24 +289,24 @@ textarea {
   color: #fff;
   border-radius: 16px;
   padding: 16px 48px;
-  margin-left: 1100px;
   border: 1px solid #d8d8d8;
 }
 
 
-.faq-section {
+#faq-section {
     background: #fdfdfd;
     min-height: 100vh;
     padding: 10vh 0 0;
 }
-.faq-title h2 {
+#faq-title h2 {
   position: relative;
   margin-bottom: 45px;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
+  text-align: center;
 }
-.faq-title h2::before {
+#faq-title h2::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -317,7 +316,7 @@ textarea {
     bottom: -25px;
     margin-left: -30px;
 }
-.faq-title p {
+#faq-title p {
   padding: 0 190px;
   margin-bottom: 10px;
 }
@@ -349,7 +348,7 @@ textarea {
     background: rgba(233, 30, 99, 0.1);
     padding-left: 10px;
 }
-.faq .card .card-header .faq-title {
+.faq .card .card-header #faq-title {
   width: 100%;
   text-align: justify;
   padding: 0px;
@@ -369,7 +368,7 @@ textarea {
   padding-bottom: 20px;
 }
 
-.faq .card .card-header .faq-title .badge {
+.faq .card .card-header #faq-title .badge {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -385,7 +384,7 @@ textarea {
   margin-right: 20px;
 }
 
-.faq .card .card-body {
+.faq .card #card-body {
   padding: 30px;
   padding-left: 35px;
   padding-bottom: 16px;
@@ -398,7 +397,7 @@ textarea {
   border-top: 1px solid #F3F8FF;
 }
 
-.faq .card .card-body p {
+.faq .card #card-body p {
   margin-bottom: 14px;
 }
 
@@ -406,7 +405,7 @@ textarea {
   .faq {
     margin-bottom: 30px;
   }
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     line-height: 26px;
     margin-top: 10px;
   }
@@ -438,12 +437,12 @@ textarea {
     padding-left: 0;
   }
   
-  .faq-title p {
+  #faq-title p {
     padding: 0;
     margin-bottom: 5px;
   }
   
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 14px;
@@ -451,7 +450,7 @@ textarea {
     padding-bottom: 10px;
   }
   
-  .faq .card .card-body {
+  .faq .card #card-body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -474,15 +473,15 @@ textarea {
 
 @media (max-width: 576px) {
   /* Điều chỉnh các luật CSS cho màn hình có chiều rộng tối đa 576px */
-  .faq-title h2 {
+  #faq-title h2 {
     font-size: 20px;
   }
   
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     font-size: 12px;
   }
   
-  .faq .card .card-body {
+  .faq .card #card-body {
     font-size: 12px;
     line-height: 20px;
   }

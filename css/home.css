@@ -424,7 +424,7 @@ ul {
 
 .progress-bar-fill {
   height: 100%;
-  background-color: #2fbb89;
+  background-color: #1fab89;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +455,7 @@ ul {
     height: 45px;
     margin: 20px 10px 0 34px;
     color: #fff;
-    background: #2FBB89;
+    background: #1fab89;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
