@@ -18,6 +18,16 @@
       <div class="logo"><p class="lang en jp vn" data-en="SMILE EYES CHARITY" data-jp="スマイルアイズチャリティー" data-vn="THIỆN NGUYỆN SMILE EYES">SMILE EYES CHARITY</p></div>
       <nav class="stroke">
         <ul class="menu">
+          <li>
+            <a
+              href="home.html"
+              class="lang en jp vn"
+              data-en="Home"
+              data-jp="ホーム"
+              data-vn="Trang chủ"
+              >Home</a
+            >
+          </li>
         <li><a href="faq.html" class="lang en jp vn" data-en="Q&A" data-jp="質問と回答" data-vn="Q&A">Q&A</a></li>
         <li><a href="project.html" class="lang en jp vn" data-en="Projects" data-jp="プロジェクト" data-vn="Dự Án">Projects</a></li>
         <li><a href="blog.html" class="lang en jp vn" data-en="Blogs" data-jp="ブログ" data-vn="Bài Viết">Blogs</a></li>
@@ -114,9 +124,12 @@
 
               <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
            
-            <div class="icon">
-              <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')">
-            </div>
+            <div
+                class="icon"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
+              >
+                <img src="img/share.png" alt="Share Icon" />
+              </div>
 
               <div class="btn-container">
                 <button class="btn-pj">
@@ -209,9 +222,12 @@
 
               <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
            
-            <div class="icon">
-              <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')">
-            </div>
+            <div
+                class="icon"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
+              >
+                <img src="img/share.png" alt="Share Icon" />
+              </div>
 
             <div class="btn-container">
               <button class="btn-pj">
@@ -291,9 +307,12 @@
 
               <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
            
-            <div class="icon">
-              <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')">
-            </div>
+            <div
+                class="icon"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
+              >
+                <img src="img/share.png" alt="Share Icon" />
+              </div>
 
             <div class="btn-container">
               <button class="btn-pj">
@@ -385,9 +404,12 @@
 
               <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
            
-            <div class="icon">
-              <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')">
-            </div>
+            <div
+                class="icon"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
+              >
+                <img src="img/share.png" alt="Share Icon" />
+              </div>
 
             <div class="btn-container">
               <button class="btn-pj">
@@ -894,85 +916,85 @@
     <script>
 
 
-function changeLanguage(language) {
-            var elements = document.querySelectorAll('.lang');
+      function changeLanguage(language) {
+                  var elements = document.querySelectorAll('.lang');
 
-            elements.forEach(function(element) {
-                var content = element.getAttribute('data-' + language);
-                element.textContent = content;
-            });
-        
-
-
-            var imgElement = document.querySelector('.en-link img');
-            imgElement.src = 'img/' + language + '.png';
-
-          }
+                  elements.forEach(function(element) {
+                      var content = element.getAttribute('data-' + language);
+                      element.textContent = content;
+                  });
+              
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon');
-  const menuRp = document.querySelector('.menu-rp');
+                  var imgElement = document.querySelector('.en-link img');
+                  imgElement.src = 'img/' + language + '.png';
 
-  menuIcon.addEventListener('click', function() {
-    menuRp.classList.toggle('active'); // Toggle class 'active' cho menu-rp
-  });
-});
+                }
 
-// ------------logo--------------------
-const image = document.querySelectorAll(".dropdown-content img");
-image.forEach((el) => el.addEventListener('click', change));
-function change(e) {
-  const source = e.target.getAttribute('src');
-  const featureImage = document.querySelector('.image');
-  featureImage.setAttribute('src', source);
-}
 
-      
-      // ------------heart--------------------
-      let count1 = 10000;
-      let count2 = 10000;
-      let count3 = 10000;
-      let count4 = 10000;
-      let count5 = 10000;
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuRp = document.querySelector('.menu-rp');
 
-function increaseCount1() {
-count1++;
-document.getElementById("count1").innerHTML = formatNumber(count1);
-}
+        menuIcon.addEventListener('click', function() {
+          menuRp.classList.toggle('active'); // Toggle class 'active' cho menu-rp
+        });
+      });
 
-function increaseCount2() {
-count2++;
-document.getElementById("count2").innerHTML = formatNumber(count2);
-}
+      // ------------logo--------------------
+      const image = document.querySelectorAll(".dropdown-content img");
+      image.forEach((el) => el.addEventListener('click', change));
+      function change(e) {
+        const source = e.target.getAttribute('src');
+        const featureImage = document.querySelector('.image');
+        featureImage.setAttribute('src', source);
+      }
 
-function increaseCount3() {
-count3++;
-document.getElementById("count3").innerHTML = formatNumber(count3);
-}
+            
+            // ------------heart--------------------
+            let count1 = 10000;
+            let count2 = 10000;
+            let count3 = 10000;
+            let count4 = 10000;
+            let count5 = 10000;
 
-function increaseCount4() {
-count4++;
-document.getElementById("count4").innerHTML = formatNumber(count4);
-}
+      function increaseCount1() {
+      count1++;
+      document.getElementById("count1").innerHTML = formatNumber(count1);
+      }
 
-function increaseCount5() {
-count5++;
-document.getElementById("count5").innerHTML = formatNumber(count5);
-}
+      function increaseCount2() {
+      count2++;
+      document.getElementById("count2").innerHTML = formatNumber(count2);
+      }
 
-function formatNumber(number) {
-if (number >= 1000000) {
-  return (number / 1000000).toFixed(3).replace(/\.000$/, '') + '';
-} else if (number >= 1000) {
-  if (number % 1000 === 999) {
-    number = Math.floor(number / 1000);
-  }
-  return (number / 1000).toFixed(3).replace(/\.000$/, '') + '';
-} else {
-  return number.toString();
-}
-}
+      function increaseCount3() {
+      count3++;
+      document.getElementById("count3").innerHTML = formatNumber(count3);
+      }
+
+      function increaseCount4() {
+      count4++;
+      document.getElementById("count4").innerHTML = formatNumber(count4);
+      }
+
+      function increaseCount5() {
+      count5++;
+      document.getElementById("count5").innerHTML = formatNumber(count5);
+      }
+
+      function formatNumber(number) {
+      if (number >= 1000000) {
+        return (number / 1000000).toFixed(3).replace(/\.000$/, '') + '';
+      } else if (number >= 1000) {
+        if (number % 1000 === 999) {
+          number = Math.floor(number / 1000);
+        }
+        return (number / 1000).toFixed(3).replace(/\.000$/, '') + '';
+      } else {
+        return number.toString();
+      }
+      }
 
 
       function shareOnFacebook(urlToShare) {
@@ -981,6 +1003,25 @@ if (number >= 1000000) {
       }
 
 
+      function copyShareLink(link) {
+        // Tạo một thẻ textarea tạm thời để chứa đường link
+        var tempTextArea = document.createElement("textarea");
+        tempTextArea.value = link;
+        document.body.appendChild(tempTextArea);
+
+        // Chọn toàn bộ nội dung của thẻ textarea
+        tempTextArea.select();
+        tempTextArea.setSelectionRange(0, 99999); // Đối với một số trình duyệt
+
+        // Sao chép nội dung vào clipboard
+        document.execCommand("copy");
+
+        // Xóa thẻ textarea tạm thời
+        document.body.removeChild(tempTextArea);
+
+        // Thông báo cho người dùng biết rằng đã sao chép thành công
+        alert("Đã sao chép đường link vào clipboard!");
+      }
   </script>
 
 

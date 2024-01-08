@@ -36,27 +36,27 @@ header a {
 }
 
 .logo-link img {
-  width: 100px; 
+  width: 100px;
   height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
   display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
 }
 
 .en-link img {
-  width: 30px; 
+  width: 30px;
   height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
   display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
 }
 
 .jp-link img {
-  width: 30px; 
-  height: auto; 
-  display: block; 
+  width: 30px;
+  height: auto;
+  display: block;
 }
 
 .vn-link img {
-  width: 30px; 
-  height: auto; 
-  display: block; 
+  width: 30px;
+  height: auto;
+  display: block;
 }
 
 .language-switcher i {
@@ -107,7 +107,6 @@ header a {
 .dropdown img {
   margin-right: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
-
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -160,7 +159,7 @@ nav.fill ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #aaa;
   height: 1px;
@@ -175,7 +174,7 @@ nav.fill ul li a {
 
 nav.fill ul li a:after {
   text-align: left;
-  content: '.';
+  content: ".";
   margin: 0;
   opacity: 0;
 }
@@ -190,7 +189,6 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
-
 
 /*---------------------------- Tìm kiếm---------------------------------------------- */
 .search-bar {
@@ -331,7 +329,7 @@ ul {
   padding: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  flex: 0 0 40%;
+  flex: 0 0 46%;
   margin-bottom: 20px;
 }
 
@@ -490,4 +488,3 @@ ul {
 .text {
   margin-top: 70px;
 }
-
