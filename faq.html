@@ -15,36 +15,45 @@
 <body>
     <header>
         <a href="home.html" class="logo-link">
-            <img src="img/logo.png" alt="Logo" />
-          </a>
-          <div class="logo"><p class="lang en jp vn" data-en="SMILE EYES CHARITY" data-jp="スマイルアイズチャリティー" data-vn="THIỆN NGUYỆN SMILE EYES">SMILE EYES CHARITY</p></div>
-          <nav class="stroke">
-            <ul class="menu">
-            <li><a href="faq.html" class="lang en jp vn" data-en="Q&A" data-jp="質問と回答" data-vn="Q&A">Q&A</a></li>
-            <li><a href="project.html" class="lang en jp vn" data-en="Projects" data-jp="プロジェクト" data-vn="Dự Án">Projects</a></li>
-            <li><a href="blog.html" class="lang en jp vn" data-en="Blogs" data-jp="ブログ" data-vn="Bài Viết">Blogs</a></li>
-            <li><a href="Achievement.html" class="lang en jp vn" data-en="Achievements" data-jp="実績" data-vn="Thành Tựu">Achievements</a></li>
-            <li><a href="TobeVolunteers.html" class="lang en jp vn" data-en="Contributors" data-jp="貢献者" data-vn="Đóng Góp">Contributors</a></li>
-            <li><a href="contact.html" class="lang en jp vn" data-en="Q&A & Contact" data-jp="Q&A & お問い合わせ" data-vn="Hỏi & Liên Hệ">Contact</a></li>
-            </ul>
-          </nav>
-
-        <div class="language-container">
-            <div class="dropdown"id="language-select" onchange="switchLanguage(this.value)">
-                <li><a href="index.html" class="en-link" data-value="en" ><img src="/img/en.png" alt="English"></a></li>
-                <ul class="dropdown-content">
-                    <li><a href="" data-value="vi"><img src="/img/vietnam.png" alt="Tiếng Việt"></a></li>
-                    <li><a href="" data-value="ja"><img src="/img/japan.png" alt="日本語"></a></li>
-                </ul>
-            </div>
-        </div>
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+        <div class="logo"><p class="lang en jp vn" data-en="SMILE EYES CHARITY" data-jp="スマイルアイズチャリティー" data-vn="THIỆN NGUYỆN SMILE EYES">SMILE EYES CHARITY</p></div>
+        <nav class="stroke">
+          <ul class="menu">
+          <li><a href="faq.html" class="lang en jp vn" data-en="Q&A" data-jp="質問と回答" data-vn="Q&A">Q&A</a></li>
+          <li><a href="project.html" class="lang en jp vn" data-en="Projects" data-jp="プロジェクト" data-vn="Dự Án">Projects</a></li>
+          <li><a href="blog.html" class="lang en jp vn" data-en="Blogs" data-jp="ブログ" data-vn="Bài Viết">Blogs</a></li>
+          <li><a href="Achievement.html" class="lang en jp vn" data-en="Achievements" data-jp="実績" data-vn="Thành Tựu">Achievements</a></li>
+          <li><a href="TobeVolunteers.html" class="lang en jp vn" data-en="Contributors" data-jp="貢献者" data-vn="Đóng Góp">Contributors</a></li>
+          <li><a href="contact.html" class="lang en jp vn" data-en="Q&A & Contact" data-jp="Q&A & お問い合わせ" data-vn="Hỏi & Liên Hệ">Contact</a></li>
+          </ul>
+        </nav>
+        
+  
+      <div class="language-container">
         <div class="dropdown">
-            <select id="language-select" onchange="switchLanguage(this.value)">
-                <option value="en" data-image="en.png">En</option>
-                <option value="vi" data-image="vi.png">Vi</option>
-                <option value="ja" data-image="jp.png">Ja</option>
-            </select>
+          <a href="#" class="en-link">
+            <img src="img/en.png" alt="NN" style="font-size: 30" />
+            <p class="lang en jp vn"
+            data-en="English"
+            data-jp="日本語"
+            data-vn="Tiếng Việt">
+            English</p>
+          </a>
+          <div class="dropdown-content">
+            <!-- ... (các phần tử khác) ... -->
+            <a href="#" class="en-link dropdown" onclick="changeLanguage('en')">
+              <img src="img/en.png" alt="NN" style="font-size: 30" />EN
+            </a>
+            <a href="#" class="jp-link dropdown" onclick="changeLanguage('jp')">
+              <img src="img/jp.png" alt="NN" style="font-size: 30" />JP
+            </a>
+            <a href="#" class="vn-link dropdown" onclick="changeLanguage('vn')">
+              <img src="img/vn.png" alt="NN" style="font-size: 30" />VN
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
 <h1 id="title-ques">Ask Questions With Us</h1>

@@ -20,7 +20,9 @@ header {
 header a {
   color: #000000;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1%;
+  font-size: 18px;
+  white-space: nowrap; /* Ngăn nội dung xuống dòng */
 }
 
 .logo {
@@ -31,15 +33,42 @@ header a {
 
 .logo-link img {
   width: 100px; 
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+  display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
+}
+
+.en-link img {
+  width: 30px; 
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+  display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
+}
+
+.jp-link img {
+  width: 30px; 
   height: auto; 
   display: block; 
 }
 
-/* lang swtich */
+.vn-link img {
+  width: 30px; 
+  height: auto; 
+  display: block; 
+}
 
-.en-link img {
-  width: 30px;
-  display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
+.language-switcher i {
+  color: #000000;
+  margin-left: 2px; /* Khoảng cách giữa văn bản và icon */
+  font-size: 16px; /* Kích thước của icon */
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+#drop-content {
+  margin-bottom: 5px;
 }
 
 .dropbtn {
@@ -54,7 +83,7 @@ header a {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -67,22 +96,39 @@ header a {
   z-index: 1;
 }
 
+.dropdown a {
+  display: flex; /* Cho phép các phần tử trong .dropdown a nằm ngang */
+  align-items: center; /* Căn chỉnh các phần tử theo trục dọc */
+  margin-right: 10px; /* Khoảng cách giữa các phần tử */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+  color: #000000; /* Màu chữ */
+}
+
+.dropdown img {
+  margin-right: 5px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
+/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
@@ -96,10 +142,10 @@ header a {
 
 .menu li {
   margin: 0 20px;
-  font-weight: bold; 
+  font-weight: bold; /* In đậm các mục trong menu */
 }
 .menu li:first-child {
-  margin-left: 100px; 
+  margin-left: 100px; /* Đẩy phần "Activities" sang phải 10px */
 }
 
 nav.stroke ul li a,
