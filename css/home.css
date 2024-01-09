@@ -465,6 +465,7 @@ ul {
     display: inline-block;
     border: none;
     z-index: 1;
+    text-align: center;
   }
   .btn-pj:after {
     position: absolute;
