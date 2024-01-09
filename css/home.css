@@ -29,6 +29,10 @@ header a {
   white-space: nowrap; /* Ngăn nội dung xuống dòng */
 }
 
+h1 {
+  color:#1fab89
+}
+
 .logo {
   color: #000000;
   font-size: 24px;
@@ -424,7 +428,7 @@ ul {
 
 .progress-bar-fill {
   height: 100%;
-  background-color: #2fbb89;
+  background-color: #1fab89;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +459,7 @@ ul {
     height: 45px;
     margin: 20px 10px 0 34px;
     color: #fff;
-    background: #2FBB89;
+    background: #1fab89;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
@@ -627,19 +631,19 @@ ul {
 } 
 
 .founder-card {
-  width: 650px;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  margin: 10px 0 10px 430px;
+  margin: 10px 50px 10px 300px;
   
 }
 
-.founder-card h1 {
+.founder-card h2 {
   text-align: center;
 }
 
@@ -653,7 +657,7 @@ ul {
 
 
 .founder-card .general {
-  width: 300px;
+  width: 600px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -861,10 +865,11 @@ ul {
 .sponsor {
   position: relative;
   width: 100%;
-  height: 770px;
+  height: 620px;
   top: -130px;
   right: -50px;
   margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 

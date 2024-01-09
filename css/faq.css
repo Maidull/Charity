@@ -64,7 +64,6 @@ header a {
 .language-container {
   display: flex;
   align-items: center;
-  margin-left: 200px;
 }
 
 #drop-content {
@@ -290,24 +289,24 @@ textarea {
   color: #fff;
   border-radius: 16px;
   padding: 16px 48px;
-  margin-left: 1100px;
   border: 1px solid #d8d8d8;
 }
 
 
-.faq-section {
+#faq-section {
     background: #fdfdfd;
     min-height: 100vh;
     padding: 10vh 0 0;
 }
-.faq-title h2 {
+#faq-title h2 {
   position: relative;
   margin-bottom: 45px;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
+  text-align: center;
 }
-.faq-title h2::before {
+#faq-title h2::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -317,7 +316,7 @@ textarea {
     bottom: -25px;
     margin-left: -30px;
 }
-.faq-title p {
+#faq-title p {
   padding: 0 190px;
   margin-bottom: 10px;
 }
@@ -349,7 +348,7 @@ textarea {
     background: rgba(233, 30, 99, 0.1);
     padding-left: 10px;
 }
-.faq .card .card-header .faq-title {
+.faq .card .card-header #faq-title {
   width: 100%;
   text-align: justify;
   padding: 0px;
@@ -369,7 +368,7 @@ textarea {
   padding-bottom: 20px;
 }
 
-.faq .card .card-header .faq-title .badge {
+.faq .card .card-header #faq-title .badge {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -385,7 +384,7 @@ textarea {
   margin-right: 20px;
 }
 
-.faq .card .card-body {
+.faq .card #card-body {
   padding: 30px;
   padding-left: 35px;
   padding-bottom: 16px;
@@ -398,7 +397,7 @@ textarea {
   border-top: 1px solid #F3F8FF;
 }
 
-.faq .card .card-body p {
+.faq .card #card-body p {
   margin-bottom: 14px;
 }
 
@@ -406,7 +405,7 @@ textarea {
   .faq {
     margin-bottom: 30px;
   }
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     line-height: 26px;
     margin-top: 10px;
   }
@@ -438,12 +437,12 @@ textarea {
     padding-left: 0;
   }
   
-  .faq-title p {
+  #faq-title p {
     padding: 0;
     margin-bottom: 5px;
   }
   
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 14px;
@@ -451,7 +450,7 @@ textarea {
     padding-bottom: 10px;
   }
   
-  .faq .card .card-body {
+  .faq .card #card-body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -472,17 +471,142 @@ textarea {
   }
 }
 
+
+/*--------Contact--------*/
+
+.contact-title{
+  text-align: center;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 16px;
+}
+
+#contact-content{
+  text-align: justify;
+  text-indent: 32px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
+  width: 100%;
+}
+
+.relative {
+  width: 25%;
+  position: relative;
+}
+
+.contact .infor {
+  position: absolute;
+  top: -20%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-direction: column;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1fab89;
+}
+
+.contact .form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infor h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.infor div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.infor div i {
+  padding-right: 10px;
+}
+
+.infor h4 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.9rem;
+  padding-bottom: 30px;
+}
+
+.infor h5 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+.nhat {
+  color: #f4f4f4;
+}
+
+.form h3 {
+  text-align: center;
+  color: #2FBB89;
+  margin-bottom: 20px;
+}
+
+.form input {
+  height: 2.5rem;
+}
+
+.form input,
+.form textarea {
+  border: 0;
+  border: 1.5px solid #2FBB89;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  padding-left: 7px;
+}
+
+#btn-submit {
+  background-color: #2FBB89;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 16px;
+  padding: 16px 48px;
+  border: 1px solid #d8d8d8;
+}
+
+#map {
+  margin-top: 120px;
+  width: 100%;
+}
+
+#map iframe {
+  width: 100%;
+}
+
 @media (max-width: 576px) {
   /* Điều chỉnh các luật CSS cho màn hình có chiều rộng tối đa 576px */
-  .faq-title h2 {
+  #faq-title h2 {
     font-size: 20px;
   }
   
-  .faq .card .card-header .faq-title {
+  .faq .card .card-header #faq-title {
     font-size: 12px;
   }
   
-  .faq .card .card-body {
+  .faq .card #card-body {
     font-size: 12px;
     line-height: 20px;
   }

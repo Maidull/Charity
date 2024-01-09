@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="js/home.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+    
   </head>
   <body>
     <header>
       <a href="home.html" class="logo-link">
-        <img src="img/logo.png" alt="Logo" />
+        <img src="img/logo1.png" alt="Logo" />
       </a>
-      <div class="logo"><p class="lang en jp vn" data-en="SMILE EYES CHARITY" data-jp="スマイルアイズチャリティー" data-vn="THIỆN NGUYỆN SMILE EYES">SMILE EYES CHARITY</p></div>
+      <div class="logo">
+        <p
+          class="lang en jp vn"
+          data-en="SMILE EYES CHARITY"
+          data-jp="スマイルアイズチャリティー"
+          data-vn="THIỆN NGUYỆN SMILE EYES"
+        >
+          SMILE EYES CHARITY
+        </p>
+      </div>
       <nav class="stroke">
         <ul class="menu">
           <li>
@@ -28,49 +36,100 @@
               >Home</a
             >
           </li>
-        <li><a href="faq.html" class="lang en jp vn" data-en="Q&A" data-jp="質問と回答" data-vn="Q&A">Q&A</a></li>
-        <li><a href="project.html" class="lang en jp vn" data-en="Projects" data-jp="プロジェクト" data-vn="Dự Án">Projects</a></li>
-        <li><a href="blog.html" class="lang en jp vn" data-en="Blogs" data-jp="ブログ" data-vn="Bài Viết">Blogs</a></li>
-        <li><a href="Achievement.html" class="lang en jp vn" data-en="Achievements" data-jp="実績" data-vn="Thành Tựu">Achievements</a></li>
-        <li><a href="TobeVolunteers.html" class="lang en jp vn" data-en="Contributors" data-jp="貢献者" data-vn="Đóng Góp">Contributors</a></li>
-        <li><a href="contact.html" class="lang en jp vn" data-en="Q&A & Contact" data-jp="Q&A & お問い合わせ" data-vn="Hỏi & Liên Hệ">Contact</a></li>
+          <li>
+            <a
+              href="faq.html"
+              class="lang en jp vn"
+              data-en="Q&A"
+              data-jp="質問と回答"
+              data-vn="Q&A"
+              >Q&A</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="lang en jp vn"
+              data-en="Projects"
+              data-jp="プロジェクト"
+              data-vn="Dự Án"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="lang en jp vn"
+              data-en="Blogs"
+              data-jp="ブログ"
+              data-vn="Bài Viết"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="Achievement.html"
+              class="lang en jp vn"
+              data-en="Achievements"
+              data-jp="実績"
+              data-vn="Thành Tựu"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a
+              href="TobeVolunteers.html"
+              class="lang en jp vn"
+              data-en="Contributors"
+              data-jp="貢献者"
+              data-vn="Đóng Góp"
+              >Contributors</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="lang en jp vn"
+              data-en="Q&A & Contact"
+              data-jp="Q&A & お問い合わせ"
+              data-vn="Hỏi & Liên Hệ"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
-      
 
-    <div class="language-container">
-      <div class="dropdown">
-        <a href="#" class="en-link">
-          <img src="img/en.png" alt="NN" style="font-size: 30" />
-          <p id="drop-content" class="lang en jp vn" data-en="English" data-jp="日本語" data-vn="Tiếng Việt">English</p>
-        </a>
-        <div class="dropdown-content">
-          <!-- ... (các phần tử khác) ... -->
-          <a href="#" class="en-link dropdown" onclick="changeLanguage('en')">
-            <img src="img/en.png" alt="NN" style="font-size: 30" />EN
+      <div class="language-container">
+        <div class="dropdown">
+          <a href="#" class="en-link">
+            <img src="img/en.png" alt="NN" style="font-size: 30" />
+            <p
+              class="lang en jp vn"
+              data-en="English"
+              data-jp="日本語"
+              data-vn="Tiếng Việt"
+            >
+              English
+            </p>
           </a>
-          <a href="#" class="jp-link dropdown" onclick="changeLanguage('jp')">
-            <img src="img/jp.png" alt="NN" style="font-size: 30" />JP
-          </a>
-          <a href="#" class="vn-link dropdown" onclick="changeLanguage('vn')">
-            <img src="img/vn.png" alt="NN" style="font-size: 30" />VN
-          </a>
+          <div class="dropdown-content">
+            <!-- ... (các phần tử khác) ... -->
+            <a href="#" class="en-link dropdown" onclick="changeLanguage('en')">
+              <img src="img/en.png" alt="NN" style="font-size: 30" />EN
+            </a>
+            <a href="#" class="jp-link dropdown" onclick="changeLanguage('jp')">
+              <img src="img/jp.png" alt="NN" style="font-size: 30" />JP
+            </a>
+            <a href="#" class="vn-link dropdown" onclick="changeLanguage('vn')">
+              <img src="img/vn.png" alt="NN" style="font-size: 30" />VN
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-
-    <!-- Thanh tìm kiếm phía dưới header -->
-    <!-- <div class="search-bar">
-      <span class="search-container">
-        <button type="submit"><i class="fa-solid fa-search"></i></button>
-        <input type="text" placeholder="Search project and program contents" />
-      </span>
-    </div> -->
-
-    <!-- Main -->
-    <body>
+    <!-- main -->
+    <main>
       <div class="content">
         <h1
           class="lang en jp vn"
@@ -101,14 +160,7 @@
             </p>
 
             <div class="progrress-container">
-              <div class="text">
-                <p
-                  class="lang en jp vn"
-                  data-en="Funding"
-                  data-vn="Kinh phí"
-                  data-jp="資金調達">
-                  Funding
-                </p>
+              <div class="text">                
               </div>
               <div class="progress-bar">
                 <div class="progress-bar-fill" style="width: 50%">
@@ -117,43 +169,40 @@
               </div>
             </div>
             <div class="icon-container">
+
               <div class="icon" onclick="increaseCount1()">
                 <img src="img/heart.png" alt="" />
                 <p class="tim" id="count1">10.000</p>
               </div>
 
-              <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
-           
-            <div
-                class="icon"
-                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
-              >
-                <img src="img/share.png" alt="Share Icon" />
+              <div class="icon">
+                <a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit" ><img src="img/excel.png" alt=""/></a>
+              </div>
+
+              <div class="icon">
+                <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                />
               </div>
 
               <div class="btn-container">
-                <button class="btn-pj">
-                  <p class="lang en jp vn"
-                  data-en="Ask to join"
-                  data-jp="参加して貢献する"
-                  data-vn="Tham gia">
-                  Ask to join
-                </p> 
+                <button class="btn-pj" class="lang en jp vn" data-en="Contribute" data-jp="貢献する" data-vn="Đóng góp">
+                  Contribute
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!--  -->
 
-
-      <!-- Main 1 - project call  -->
+<!-- Main 1 - project call  -->
       <h1 style="text-align: center" class="lang en jp vn" 
       data-en="THE PROJECT ARE CALLING VOLUNTEERS AND SPONSORS"
               data-jp="プロジェクトはボランティアとスポンサーを募集しています"
               data-vn="DỰ ÁN ĐANG GỌI MỜI TÌNH NGUYỆN VIÊN VÀ NHÀ TÀI TRỢ">
         THE PROJECT ARE CALLING VOLUNTEERS AND SPONSORS
       </h1>
+
       <div class="card-container">
         <div class="card">
           <div class="title">
@@ -167,7 +216,15 @@
           </div>
           <p style="text-align: center">31/10/2023</p>
           <div class="video">
-            <iframe width="100%" height="290px" src="https://www.youtube.com/embed/TKpN7cVX7y8?si=G9W-K96x6G-1hH6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe
+              width="100%"
+              height="290px"
+              src="https://www.youtube.com/embed/TKpN7cVX7y8?si=G9W-K96x6G-1hH6u"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="description">
             <p
@@ -199,13 +256,7 @@
           </div>
           <div class="progrress-container">
             <div class="">
-              <b
-                class="lang en jp vn"
-                data-en="Funding"
-                data-vn="Kinh phí"
-                data-jp="資金調達"
-                >Funding</b
-              >
+              <b class="lang en jp vn" data-en="Budget: 215,400,000 VND (9,000 USD)" data-vn="Ngân sách: 215,400,000 VND (9,000 USD)" data-jp="予算: 215,400,000 VND (9,000 USD)">Bugdet: 215,400,000 VND (9,000 USD)</b>
             </div>
             <div class="progress-bar">
               <div class="progress-bar-fill" style="width: 50%">
@@ -214,28 +265,35 @@
             </div>
           </div>
 
+
           <div class="icon-container">
             <div class="icon" onclick="increaseCount2()">
-                <img src="img/heart.png" alt="" />
-                <p class="tim" id="count2">10.000</p>
-              </div>
+              <img src="img/heart.png" alt="" />
+              <p class="tim" id="count2">10.000</p>
+            </div>
 
-              <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
-           
-            <div
-                class="icon"
-                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
-              >
-                <img src="img/share.png" alt="Share Icon" />
-              </div>
+            <div class="icon">
+              <a
+                href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"
+                ><img src="img/excel.png" alt=""
+              /></a>
+            </div>
+
+            <div class="icon">
+              <img
+                src="img/share.png"
+                alt=""
+                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+              />
+            </div>
 
             <div class="btn-container">
               <button class="btn-pj">
                   <p class="lang en jp vn"
-                  data-en="Ask to join"
-                  data-jp="参加して貢献する"
-                  data-vn="Tham gia">
-                  Ask to join
+                  data-en="Contribute"
+                  data-jp="貢献する"
+                  data-vn="Đóng góp">
+                  Contribute
                 </p> 
                 </button>
             </div>
@@ -253,7 +311,15 @@
           </div>
           <p style="text-align: center">31/10/2023</p>
           <div class="video">
-            <iframe width="100%" height="290px" src="https://www.youtube.com/embed/7sx0r5rmI9M?si=0pJO0m9DODpTG99s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe
+              width="100%"
+              height="290px"
+              src="https://www.youtube.com/embed/7sx0r5rmI9M?si=0pJO0m9DODpTG99s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="description">
             <p
@@ -264,8 +330,7 @@
               data-jp="有機肥料は作物の品質と収量を決める重要な要素です。このプロジェクトは、村内の家畜や家禽の排泄物、農業廃棄物、家庭廃棄物を肥料源として再利用し、人々の庭や農業の経済モデルに供給することを目的としています。
               その結果、人々は廃棄物から有機肥料を作るプロセスを理解しました。人々は自分の庭に高品質の有機肥料を低コストで入手できます。また、村内の緑豊かな環境づくりにも貢献します。
               "
-              data-vn="Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. 
-              Kết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.  
+              data-vn="Dự án này nhằm mục đích đồng hành và chia sẻ kỹ thuật chăn nuôi và rau hữu cơ bền vững với người dân trong làng. Các chuyên gia của dự án sẽ cùng người dân xây dựng các mô hình trồng trọt, chăn nuôi quy mô nhỏ tại thôn. Họ sẽ đến bản, cùng làm việc và chia sẻ trực tiếp với dân làng cách làm ruộng, để dân làng hiểu sâu và trực tiếp thực hành. Từ đó, người dân trong làng nắm vững được kỹ thuật và có thể tự xây dựng khu vườn riêng để cung cấp lương thực cho gia đình.  
               "
             >
               Organic fertilizer is an important ingredient that determines crop
@@ -285,13 +350,7 @@
           </div>
           <div class="progrress-container">
             <div class="">
-              <b
-                class="lang en jp vn"
-                data-en="Funding"
-                data-vn="Kinh phí"
-                data-jp="資金調達"
-                >Funding</b
-              >
+              <b class="lang en jp vn" data-en="Budget: 215,400,000 VND (9,000 USD)" data-vn="Ngân sách: 215,400,000 VND (9,000 USD)" data-jp="予算: 215,400,000 VND (9,000 USD)">Bugdet: 215,400,000 VND (9,000 USD)</b>
             </div>
             <div class="progress-bar">
               <div class="progress-bar-fill" style="width: 50%">
@@ -300,27 +359,34 @@
             </div>
           </div>
           <div class="icon-container">
-            <div class="icon" onclick="increaseCount3()">
-                <img src="img/heart.png" alt="" />
-                <p class="tim" id="count3">10.000</p>
-              </div>
 
-              <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
-           
-            <div
-                class="icon"
-                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
-              >
-                <img src="img/share.png" alt="Share Icon" />
-              </div>
+            <div class="icon" onclick="increaseCount3()">
+              <img src="img/heart.png" alt="" />
+              <p class="tim" id="count3">10.000</p>
+            </div>
+
+            <div class="icon">
+              <a
+                href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"
+                ><img src="img/excel.png" alt=""
+              /></a>
+            </div>
+
+            <div class="icon">
+              <img
+                src="img/share.png"
+                alt=""
+                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+              />
+            </div>
 
             <div class="btn-container">
               <button class="btn-pj">
               <p class="lang en jp vn"
-                data-en="Ask to join"
-                data-jp="参加して貢献する"
-                data-vn="Tham gia">             
-                Ask to join 
+                data-en="Contribute"
+                data-jp="貢献する"
+                data-vn="Đóng góp">             
+                Contribute 
               </p>
               </button>
             </div>
@@ -328,16 +394,17 @@
         </div>
       </div>
 
+      <!--  -->
       <div class="card-container">
         <div class="card">
           <div class="title">
             <p
               class="lang en jp vn"
-              data-en="SUPPORT TO BUILD AN ORGANIC FERTILIZER PRODUCTION FACILITY"
+              data-en="PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD"
               data-jp="コトゥ族のパチャン村に有機肥料生産工場を建設するプロジェクト"
               data-vn="DỰ ÁN HỖ TRỢ XÂY DỰNG XƯỞNG LÀM PHÂN HỮU CƠ Ở LÀNG PÀ CĂNG CỦA NGƯỜI CƠ TU"
             >
-              SUPPORT TO BUILD AN ORGANIC FERTILIZER PRODUCTION FACILITY
+            PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD
             </p>
           </div>
           <p style="text-align: center">31/10/2023</p>
@@ -345,7 +412,7 @@
             <iframe
               width="100%"
               height="290px"
-              src="https://www.youtube.com/embed/jbV1TDZQAFc?si=q_e8jGJFt0Cp0sOe"
+              src="https://www.youtube.com/embed/TKpN7cVX7y8?si=G9W-K96x6G-1hH6u"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -358,37 +425,22 @@
               data-en="Organic fertilizer is an important ingredient that determines crop quality and yield. The project aims to reuse domestic, livestock, poultry and agricultural waste as a source of manure; collected in and near the surrounding village. Gaining the knowledge and technology to apply the means for organic fertilizer from waste products will supply the manure to the village gardens and farms. Learning the process of such can also allow the means to run a small-scale business with an organic fertilizer factory within the village. 
               As a result, people would not only understand the process of such from waste, but also have quality fertilizer for their gardens at low cost. The people could also learn the process of running a business in the village. In addition, it contributes to making the environment in the village green and clean.
               "
-              data-jp="有機肥料は作物の品質と収量を決める重要な要素です。このプロジェクトは、村内の家畜や家禽の排泄物、農業廃棄物、家庭廃棄物を肥料源として再利用し、人々の庭や農業の経済モデルに供給することを目的としています。
-              その結果、人々は廃棄物から有機肥料を作るプロセスを理解しました。人々は自分の庭に高品質の有機肥料を低コストで入手できます。また、村内の緑豊かな環境づくりにも貢献します。
+              data-jp="Pà-căng 村には 30 の Co-tu 世帯があり、そのうち 26 世帯が貧困世帯（収入が 1,500,000 VND/世帯/月、または 65 USD 世帯/月未満）です。各家族は4〜6人です。人々は毎日森や川へ食べ物や売れる物を探しに行きます。雨季（9月～12月）は食料や衣類が不足することがよくあります。
+              各世帯の敷地面積は約500平方メートル。現在はほぼ空いております。人々は古い習慣に従っていくつかの作物を栽培し、いくつかの家畜を飼育しています。彼らは効果的な生産のための科学技術を利用することができません。彼らのほとんどはコトゥ語を話します。
               "
-              data-vn="Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. 
-              Kết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.  
+              data-vn="Làng Pà-căng có 30 gia đình Cơ-tu, trong đó có 26 gia đình nghèo (thu nhập dưới 1.500.000 đồng/hộ/tháng hoặc 65 USD hộ/tháng). Mỗi gia đình có 4~6 người. Hàng ngày người dân vào rừng hoặc ra sông để tìm kiếm thức ăn hoặc đồ vật có thể bán được. Trong mùa mưa (tháng 9 ~ tháng 12), họ thường thiếu lương thực và quần áo.
+              Mỗi gia đình có một mảnh đất rộng khoảng 500m2. Hiện tại nó gần như bị bỏ trống. Người dân trồng một số loại cây trồng và chăn nuôi theo thói quen cũ. Họ không được tiếp cận với khoa học công nghệ để sản xuất có hiệu quả. Phần lớn họ nói tiếng Cơ-tu. Tất cả người dân trong làng đều mong muốn được tiếp cận kỹ thuật canh tác để phát triển đất vườn của mình để lấy lương thực.  
               "
             >
-              Organic fertilizer is an important ingredient that determines crop
-              quality and yield. The project aims to reuse domestic, livestock,
-              poultry and agricultural waste as a source of manure; collected in
-              and near the surrounding village. Gaining the knowledge and
-              technology to apply the means for organic fertilizer from waste
-              products will supply the manure to the village gardens and farms.
-              Learning the process of such can also allow the means to run a
-              small-scale business with an organic fertilizer factory within the
-              village. As a result, people would not only understand the process
-              of such from waste, but also have quality fertilizer for their
-              gardens at low cost. The people could also learn the process of
-              running a business in the village. In addition, it contributes to
-              making the environment in the village green and clean.
+            The Pa-cang village has 30 Co-tu families, of which 26 families are poor (income less than 1,500,000 VND/household/month or 65 USD household/month). Each family has 4~6 people. Every day the people go to the forest or to the river to look for food or items that can be sold. During the rainy season (September ~ December), they often lack of food and clothing.
+            Each family has a land space of about 500m2. It is almost vacant currently. People grow some crops and raise some livestock according to old habits. They do not have access to science and technology for effective production. Most of them speak Co-tu language. All people in the village wish they can access farming techniques to develop their garden land for food. 
+            They will come to the village, work together and share directly with the villagers how to farm, so that the villagers can deeply understand and practice directly. Since then, the villagers can master the techniques and can build their own garden for their family’s food.
+            
             </p>
           </div>
           <div class="progrress-container">
             <div class="">
-              <b
-                class="lang en jp vn"
-                data-en="Funding"
-                data-vn="Kinh phí"
-                data-jp="資金調達"
-                >Funding</b
-              >
+              <b class="lang en jp vn" data-en="Budget: 215,400,000 VND (9,000 USD)" data-vn="Ngân sách: 215,400,000 VND (9,000 USD)" data-jp="予算: 215,400,000 VND (9,000 USD)">Bugdet: 215,400,000 VND (9,000 USD)</b>
             </div>
             <div class="progress-bar">
               <div class="progress-bar-fill" style="width: 50%">
@@ -397,32 +449,40 @@
             </div>
           </div>
           <div class="icon-container">
-            <div class="icon" onclick="increaseCount4()">
-                <img src="img/heart.png" alt="" />
-                <p class="tim" id="count4">10.000</p>
-              </div>
 
-              <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
-           
-            <div
-                class="icon"
-                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
-              >
-                <img src="img/share.png" alt="Share Icon" />
-              </div>
+            <div class="icon" onclick="increaseCount4()">
+              <img src="img/heart.png" alt="" />
+              <p class="tim" id="count4">10.000</p>
+            </div>
+
+            <div class="icon">
+              <a
+                href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"
+                ><img src="img/excel.png" alt=""
+              /></a>
+            </div>
+
+            <div class="icon">
+              <img
+                src="img/share.png"
+                alt=""
+                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+              />
+            </div>
 
             <div class="btn-container">
               <button class="btn-pj">
                   <p class="lang en jp vn"
-                  data-en="Ask to join"
-                  data-jp="参加して貢献する"
-                  data-vn="Tham gia">
-                  Ask to join
+                  data-en="Contribute"
+                  data-jp="貢献する"
+                  data-vn="Đóng góp">
+                  Contribute
                 </p> 
                 </button>
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="title">
             <p
@@ -439,7 +499,7 @@
             <iframe
               width="100%"
               height="290px"
-              src="https://www.youtube.com/embed/jbV1TDZQAFc?si=q_e8jGJFt0Cp0sOe"
+              src="https://www.youtube.com/embed/96LUDfTQU0o?si=Ek5LfTpXe7huEUgB"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -476,13 +536,7 @@
           </div>
           <div class="progrress-container">
             <div class="">
-              <b
-                class="lang en jp vn"
-                data-en="Funding"
-                data-vn="Kinh phí"
-                data-jp="資金調達"
-                >Funding</b
-              >
+              <b class="lang en jp vn" data-en="Budget: 215,400,000 VND (9,000 USD)" data-vn="Ngân sách: 215,400,000 VND (9,000 USD)" data-jp="予算: 215,400,000 VND (9,000 USD)">Bugdet: 215,400,000 VND (9,000 USD)</b>
             </div>
             <div class="progress-bar">
               <div class="progress-bar-fill" style="width: 50%">
@@ -491,31 +545,39 @@
             </div>
           </div>
           <div class="icon-container">
+
             <div class="icon" onclick="increaseCount5()">
               <img src="img/heart.png" alt="" />
               <p class="tim" id="count5">10.000</p>
             </div>
 
-            <div class="icon"><a href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"><img src="img/excel.png" alt="" /></a></div>
-         
-          <div class="icon">
-            <img src="img/share.png" alt="" onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')">
-          </div>
+            <div class="icon">
+              <a
+                href="https://docs.google.com/document/d/1QEnBLz6fMSq3hoF4qgnXPlrvwJjSKmgN/edit"
+                ><img src="img/excel.png" alt=""
+              /></a>
+            </div>
 
+            <div class="icon">
+              <img
+                src="img/share.png"
+                alt=""
+                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+              />
+            </div>
             <div class="btn-container">
               <button class="btn-pj">
                   <p class="lang en jp vn"
-                  data-en="Ask to join"
-                  data-jp="参加して貢献する"
-                  data-vn="Tham gia">
-                  Ask to join
+                  data-en="Contribute"
+                  data-jp="貢献する"
+                  data-vn="Đóng góp">
+                  Contribute
                 </p> 
                 </button>
             </div>
           </div>
         </div>
       </div>
-
 
       <!-- Main 3 - blog -->
       <h1 style="text-align: center">BLOG</h1>
@@ -683,60 +745,51 @@
     <!-- Main 5 - sponsor -->
     <h1 style="text-align: center">SPONSOR</h1>
     <div class="sponsor">
-      <div class="nd-spon1">
-        <div class="link-spon1">www.cortextextile.com</div>
-        <div class="txt-spon1">
-          <b class="txt1-spon">USA, Vietnam, EN</b>
-          <b class="txt2-spon">Cortex Textile Ltd.</b>
-        </div>
-        <p class="job-spon1">Global HR Manager</p>
-        <b class="name-spon1">Christine Ha</b>
+      <div class="nd-spon1">     
+        <p class="job-spon1">Global Company 1st VietNam </p>
+        <b class="name-spon1">VinGroup</b>
       </div>
       <div class="nd-spon2">
-        <div class="link-spon2"><a>www.cortextextile.com</a></div>
-        <div class="txt-spon2">
-          <b class="txt1-spon">France, Vietnam, US</b>
-          <b class="txt2-spon">Cortex Textile Ltd.</b>
-        </div>
-        <p class="job-spon2">Global HR Manager</p>
-        <b class="name-spon2">David Trump</b>
+        <p class="job-spon2">Global Education</p>
+        <b class="name-spon2">Nix Education</b>
       </div>
       
       <div class="nd-spon3">
-        <div class="link-spon3">www.cortextextile.com</div>
-        <div class="txt-spon3">
-          <b class="txt1-spon">Japan, Vietnam, US</b>
-          <b class="txt2-spon">Cortex Textile Ltd.</b>
-        </div>
-        <p class="job-spon3">Global HR Manager</p>
-        <b class="name-spon3">Mac Donal</b>
+        <p class="job-spon3">Global Technology Company</p>
+        <b class="name-spon3">FPT Company </b>
       </div>
-      <img class="sponsor-child" alt="" src="https://i.pinimg.com/564x/ff/32/56/ff3256978cd81cb519d48aa4ac67baab.jpg" />
+      <img class="sponsor-child" alt="" src="https://fpt.com/-/media/project/fpt-corporation/fpt/common/images/navigation/logo/fpt-logo-open-graph.png" />
 
-      <img class="sponsor-item" alt="" src="https://i.pinimg.com/236x/34/f4/72/34f472d9eae02282ecdf4fc9ddcc0250.jpg" />
+      <img class="sponsor-item" alt="" src="https://bizweb.dktcdn.net/100/446/826/files/logo-vingroup-1.jpg?v=1656931134108" />
 
-      <img class="sponsor-inner" alt="" src="https://i.pinimg.com/236x/6b/9b/b0/6b9bb0807c75a56e6a35c7faeed5acfd.jpg" />
+      <img class="sponsor-inner" alt="" src="https://static.ybox.vn/2023/12/1/1701679869781-logo-nix.jpg" />
     </div>
     
     <!-- Main 6 - founder -->
     <h1 style="text-align: center">FOUNDER</h1>
     <div class="founder-card">
           <div class="user-card">
-            <img src="img/founder.jpg" style="width: 300px; height: 400px;">
+            <img src="img/founder.jpg" style="width: 400px; height: 500px;">
           </div>
           
         <div class="general">
-          <h1>Dinh Thi Dong Phuong</h1>
+          <h2 class="lang en jp vn"
+          data-en="Dinh Thi Dong Phuong"
+          data-jp="ディン・ティ・ドン・フォン"
+          data-vn="Đinh Thị Đông Phương">Dinh Thi Dong Phuong</h2>
+          
           <p class="lang en jp vn"
             data-en="I was born and raised in a rural area of Quang Nam province. My childhood was filled with experiences with nature and love. My children and I played all kinds of games, including hide and seek, shooting arrows, shooting marbles, playing the leaf trumpet, playing checkers."
-            data-jp="私はクアンナム省の田舎で生まれ育ちました。私の子供時代は自然と愛の経験でいっぱいでした。子供たちと私は、かくれんぼ、矢を射る、ビー玉を射る、葉っぱのトランペットを吹く、チェッカーをするなど、あらゆる種類のゲームをしました。"
-            data-vn="Tôi sinh ra và lớn lên ở một vùng nông thôn tỉnh Quảng Nam. Tuổi thơ của tôi tràn ngập những trải nghiệm với thiên nhiên và tình yêu. Tôi và các con chơi đủ thứ trò chơi, từ trốn tìm, bắn tên, bắn bi, thổi kèn lá, đánh cờ.">
-            I was born and raised in a rural area of Quang Nam province. My childhood was filled with experiences with nature and love. My children and I played all kinds of games, including hide and seek, shooting arrows, shooting marbles, playing the leaf trumpet, playing checkers.
+            data-jp="私はクアンナム省の田舎で生まれ育ちました。私の子供時代は自然と愛の経験でいっぱいでした。かくれんぼ、矢を射る、ビー玉を射る、葉っぱのラッパを吹く、チェッカーをする、縄跳びをする、魚を捕まえたりカニを捕まえたり、木に登って果物を採ったり、洞窟に入ってコウモリを捕まえたりなど、あらゆる種類の遊びをしました。私の村の子供たちと一緒に。私の父は教師でしたが、とても優秀な農家でもありました。本業以外にも色々なことをやってくれました。彼は土地を開拓して、米作り、家畜の飼育、ワイン造り、春雨作り、麺作り、髪を切る、自転車の修理、家の建設などを行いました。<br> <br> 私の母は教師でもあり、あらゆる仕事をしていました。学校で働いた後のこと。彼女は漢方薬を作ったり、家庭教師をしたり、物を売ってお金をもらったりしていました。私の両親はいつもお互いに支え合って生活しています。私は父と母の活動のほとんどについて行きました。私は彼らから多くの興味深いことを経験し、学びました。"
+            data-vn="Tôi sinh ra và lớn lên ở một vùng nông thôn tỉnh Quảng Nam. Tuổi thơ của tôi tràn ngập những trải nghiệm về thiên nhiên và tình yêu. Em chơi đủ loại trò chơi, từ trốn tìm, bắn tên, bắn bi, thổi kèn lá, chơi cờ đam, nhảy dây, bắt cá bắt cua, trèo cây hái quả, vào hang bắt dơi, v.v. với những đứa trẻ ở làng tôi. Cha tôi là giáo viên nhưng ông cũng là một nông dân rất giỏi. Ngoài công việc chính anh còn làm đủ thứ việc. Ông khai hoang để trồng lúa, chăn nuôi, làm rượu, làm bún, làm mì, cắt tóc, sửa xe đạp, xây nhà v.v.<br> <br> Mẹ tôi cũng là giáo viên, bà cũng làm đủ mọi việc mọi việc sau khi làm việc tại trường. Bà làm thuốc, làm gia sư, bán đồ lấy tiền... Bố mẹ tôi luôn hỗ trợ nhau trong cuộc sống. Tôi đã theo bố mẹ trong hầu hết các hoạt động của họ. Tôi đã trải nghiệm và học hỏi được nhiều điều thú vị từ họ.">
+            I was born and raised in a rural area of Quang Nam province. My childhood was filled with experiences in nature and love. I played all kinds of games, including hide and seek, shooting arrows, shooting marbles, playing the leaf trumpet, playing checkers, jumping rope, catching fish and catching crabs, climbing trees to pick fruit, going into caves to catch bats, etc. with the kids in my village. My father was a teacher but he was also a very good farmer. In addition to the the main work, he did all sorts of things. He reclaimed land for farming of rice, raising livestock, making wine, making vermicelli, making noodles, cutting hair, repairing bicycles, building houses, etc.<br> <br> My mother was also a teacher, and she also did all sorts of things after working in the school. She made herbal medicine, was a tutor, sold things for money, etc. My parents always support each other in living life. I followed my father and mother in most of their activities. I experienced and learned many interesting things from them.
             </p>
         </div>
     </div>
-    
-    <!-- Footer -->
+    </main>
+
+    <!--  -->
+    <!---------------- footer------------------------>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -757,8 +810,8 @@
                   data-en="our services"
                   data-jp="私達のサービス"
                   data-vn="Dịch vụ của chúng tôi"
-                  >our services</a
-                >
+                  >Hotline: 0962 414 125
+                  </a>
               </li>
               <li>
                 <a
@@ -767,7 +820,7 @@
                   data-en="privacy policy"
                   data-jp="プライバシーポリシー"
                   data-vn="Chính sách bảo mật"
-                  >privacy policy</a
+                  >Email: dinhdongphuong@gmail.com</a
                 >
               </li>
               <li>
@@ -777,7 +830,7 @@
                   data-en="affiliate program"
                   data-jp="アフィリエイトプログラム"
                   data-vn="Chương trình liên kết"
-                  >affiliate program</a
+                  >Address: Pà-căng village, Cà-Dy commune, Nam Giang district, Quảng Nam province</a
                 >
               </li>
             </ul>
@@ -789,7 +842,7 @@
               data-jp="助けを得ます"
               data-vn="Giúp đỡ"
             >
-              get help
+              Bank Account
             </h4>
             <ul>
               <li>
@@ -799,8 +852,7 @@
                   data-en="FAQ"
                   data-jp="よくある質問"
                   data-vn="FAQ"
-                  >FAQ</a
-                >
+                  >Techcombank, 22296699,<br> Smile Eye Charity</a>
               </li>
               <li>
                 <a
@@ -809,39 +861,9 @@
                   data-en="shipping"
                   data-jp="配送"
                   data-vn="Giao hàng"
-                  >shipping</a
-                >
+                  >MB bank, 020166669999,<br> Smile Eye Charity</a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="lang en jp vn"
-                  data-en="returns"
-                  data-jp="返品"
-                  data-vn="Đổi trả"
-                  >returns</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="lang en jp vn"
-                  data-en="order status"
-                  data-jp="注文ステータス"
-                  data-vn="Trạng thái đơn hàng"
-                  >order status</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="lang en jp vn"
-                  data-en="payment options"
-                  data-jp="支払いオプション"
-                  data-vn="Phương thức thanh toán"
-                  >payment options</a
-                >
-              </li>
+              
             </ul>
           </div>
           <div class="footer-col">
@@ -851,7 +873,7 @@
               data-jp="オンラインショプ"
               data-vn="Online Shop"
             >
-              online shop
+              Working time 
             </h4>
             <ul>
               <li>
@@ -861,7 +883,7 @@
                   data-en="watch"
                   data-jp="腕時計"
                   data-vn="Đồng hồ đeo tay"
-                  >watch</a
+                  >Day: Monday ~ Saturday</a
                 >
               </li>
               <li>
@@ -871,7 +893,7 @@
                   data-en="bag"
                   data-jp="バッグ"
                   data-vn="Túi xách"
-                  >bag</a
+                  >Time: 8:30 ~ 17:30</a
                 >
               </li>
               <li>
@@ -881,7 +903,7 @@
                   data-en="shoes"
                   data-jp="靴"
                   data-vn="Giày"
-                  >shoes</a
+                  >Support: 24/7</a
                 >
               </li>
               <li>
@@ -891,7 +913,7 @@
                   data-en="dress"
                   data-jp="ドレス"
                   data-vn="Váy"
-                  >dress</a
+                  >PIC: Ms. Phuong</a
                 >
               </li>
             </ul>
@@ -908,123 +930,121 @@
         </div>
       </div>
     </footer>
-    </div>
-
-
-
+    <!-- CHUYEN NGU -->
 
     <script>
-
-
       function changeLanguage(language) {
-                  var elements = document.querySelectorAll('.lang');
+        var elements = document.querySelectorAll(".lang");
 
-                  elements.forEach(function(element) {
-                      var content = element.getAttribute('data-' + language);
-                      element.textContent = content;
-                  });
-              
-
-
-                  var imgElement = document.querySelector('.en-link img');
-                  imgElement.src = 'img/' + language + '.png';
-
-                }
-
-
-      document.addEventListener('DOMContentLoaded', function() {
-        const menuIcon = document.querySelector('.menu-icon');
-        const menuRp = document.querySelector('.menu-rp');
-
-        menuIcon.addEventListener('click', function() {
-          menuRp.classList.toggle('active'); // Toggle class 'active' cho menu-rp
+        elements.forEach(function (element) {
+          var content = element.getAttribute("data-" + language);
+          element.textContent = content;
         });
-      });
-
-      // ------------logo--------------------
-      const image = document.querySelectorAll(".dropdown-content img");
-      image.forEach((el) => el.addEventListener('click', change));
-      function change(e) {
-        const source = e.target.getAttribute('src');
-        const featureImage = document.querySelector('.image');
-        featureImage.setAttribute('src', source);
       }
 
-            
-            // ------------heart--------------------
-            let count1 = 10000;
-            let count2 = 10000;
-            let count3 = 10000;
-            let count4 = 10000;
-            let count5 = 10000;
+      document.addEventListener("DOMContentLoaded", function () {
+        // Your existing code goes here
+
+        // Cập nhật placeholder trong thanh tìm kiếm
+        var searchInput = document.querySelector(".search-bar input");
+        var placeholderContent = searchInput.getAttribute("data-" + language);
+        searchInput.setAttribute("placeholder", placeholderContent);
+
+        // Cập nhật lại logo ngôn ngữ
+        var enLink = document.querySelector(".en-link img");
+        var jpLink = document.querySelector(".jp-link img");
+        var vnLink = document.querySelector(".vn-link img");
+
+        if (language === "en") {
+          enLink.src = `img/en.png`;
+          jpLink.src = `img/jp.png`;
+          vnLink.src = `img/vn.png`;
+        } else if (language === "jp") {
+          enLink.src = `img/jp.png`;
+          jpLink.src = `img/en.png`;
+          vnLink.src = `img/vn.png`;
+        } else if (language === "vn") {
+          enLink.src = `img/vn.png`;
+          jpLink.src = `img/jp.png`;
+          vnLink.src = `img/en.png`;
+        }
+      });
+      function changeLanguage(language) {
+        var elements = document.querySelectorAll(".lang");
+
+        elements.forEach(function (element) {
+          var content = element.getAttribute("data-" + language);
+          element.textContent = content;
+        });
+
+        var imgElement = document.querySelector(".en-link img");
+        imgElement.src = "img/" + language + ".png";
+      }
+
+      const image = document.querySelectorAll(".dropdown-content img");
+      image.forEach((el) => el.addEventListener("click", change));
+      function change(e) {
+        const source = e.target.getAttribute("src");
+        const featureImage = document.querySelector(".image");
+        featureImage.setAttribute("src", source);
+      }
+
+      // ------------heart--------------------
+      let count1 = 10000;
+      let count2 = 10000;
+      let count3 = 10000;
+      let count4 = 10000;
+      let count5 = 10000;
 
       function increaseCount1() {
-      count1++;
-      document.getElementById("count1").innerHTML = formatNumber(count1);
+        count1++;
+        document.getElementById("count1").innerHTML = formatNumber(count1);
       }
 
       function increaseCount2() {
-      count2++;
-      document.getElementById("count2").innerHTML = formatNumber(count2);
+        count2++;
+        document.getElementById("count2").innerHTML = formatNumber(count2);
       }
 
       function increaseCount3() {
-      count3++;
-      document.getElementById("count3").innerHTML = formatNumber(count3);
+        count3++;
+        document.getElementById("count3").innerHTML = formatNumber(count3);
       }
 
       function increaseCount4() {
-      count4++;
-      document.getElementById("count4").innerHTML = formatNumber(count4);
+        count4++;
+        document.getElementById("count4").innerHTML = formatNumber(count4);
       }
 
       function increaseCount5() {
-      count5++;
-      document.getElementById("count5").innerHTML = formatNumber(count5);
+        count5++;
+        document.getElementById("count5").innerHTML = formatNumber(count5);
       }
+
+     
 
       function formatNumber(number) {
-      if (number >= 1000000) {
-        return (number / 1000000).toFixed(3).replace(/\.000$/, '') + '';
-      } else if (number >= 1000) {
-        if (number % 1000 === 999) {
-          number = Math.floor(number / 1000);
+        if (number >= 1000000) {
+          return (number / 1000000).toFixed(3).replace(/\.000$/, "") + "";
+        } else if (number >= 1000) {
+          if (number % 1000 === 999) {
+            number = Math.floor(number / 1000);
+          }
+          return (number / 1000).toFixed(3).replace(/\.000$/, "") + "";
+        } else {
+          return number.toString();
         }
-        return (number / 1000).toFixed(3).replace(/\.000$/, '') + '';
-      } else {
-        return number.toString();
       }
-      }
-
 
       function shareOnFacebook(urlToShare) {
         // Mở cửa sổ mới để chia sẻ đường link lên Facebook
-        window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(urlToShare), "Share on Facebook", "width=600,height=400");
+        window.open(
+          "https://www.facebook.com/sharer/sharer.php?u=" +
+            encodeURIComponent(urlToShare),
+          "Share on Facebook",
+          "width=600,height=400"
+        );
       }
-
-
-      function copyShareLink(link) {
-        // Tạo một thẻ textarea tạm thời để chứa đường link
-        var tempTextArea = document.createElement("textarea");
-        tempTextArea.value = link;
-        document.body.appendChild(tempTextArea);
-
-        // Chọn toàn bộ nội dung của thẻ textarea
-        tempTextArea.select();
-        tempTextArea.setSelectionRange(0, 99999); // Đối với một số trình duyệt
-
-        // Sao chép nội dung vào clipboard
-        document.execCommand("copy");
-
-        // Xóa thẻ textarea tạm thời
-        document.body.removeChild(tempTextArea);
-
-        // Thông báo cho người dùng biết rằng đã sao chép thành công
-        alert("Đã sao chép đường link vào clipboard!");
-      }
-  </script>
-
-
-
+    </script>
   </body>
 </html>
