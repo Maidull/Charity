@@ -13,12 +13,16 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.error-message {
+  color: red;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
 
 .line-1-gyF-s {
-  background-color: #d7dedd;
-  height: 0.1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  background-color: #85ffed;
+  height: 0.2rem;
+  margin-bottom: 1rem;
   width: 100%;
   display: flex;
 }
@@ -58,11 +62,11 @@ a.frame-427320694-Y5w-s {
 /* header */
 
 header {
-  color: #fff;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+ background-color: #f6ffe0;
 }
 
 header a {
@@ -83,7 +87,7 @@ header a {
 }
 
 .logo-link img {
-  width: 100px; 
+  width: 60px; 
   height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
   display: block; /* Loại bỏ khoảng trắng dư thừa ở dưới hình ảnh */
 }
@@ -818,6 +822,9 @@ ul {
       width: 6rem;
       border: none;
     }
+    .rectangle-211-rhP:hover {
+      background-color: #44f75c;
+    }
 
     .rectangle-212-PBX {
       background-color: #ffffff;
@@ -828,6 +835,10 @@ ul {
       top: 29rem;
       width: 6rem;
       border: none;
+    }
+
+    .rectangle-212-PBX:hover{
+      background-color: #44f75c;
     }
 
     .image-64-feq {
