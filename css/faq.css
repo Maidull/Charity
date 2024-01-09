@@ -70,8 +70,13 @@ header a {
   margin-bottom: 5px;
 }
 
+#planguage{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .dropbtn {
-  background-color: #4caf50;
+  background-color: #1fab89;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -129,7 +134,7 @@ header a {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #1fab89;
 }
 
 .menu {
@@ -285,7 +290,7 @@ textarea {
 }
 
 .btn-submit {
-  background-color: #2FBB89;
+  background-color: #1fab89;
   color: #fff;
   border-radius: 16px;
   padding: 16px 48px;
@@ -312,7 +317,7 @@ textarea {
     left: 50%;
     width: 60px;
     height: 2px;
-    background: #2FBB89;
+    background: #1fab89;
     bottom: -25px;
     margin-left: -30px;
 }
@@ -378,7 +383,7 @@ textarea {
   -moz-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
-  background: #2FBB89;
+  background: #1fab89;
   color: #fff;
   font-size: 12px;
   margin-right: 20px;
@@ -560,7 +565,7 @@ textarea {
 
 .form h3 {
   text-align: center;
-  color: #2FBB89;
+  color: #1fab89;
   margin-bottom: 20px;
 }
 
@@ -571,7 +576,7 @@ textarea {
 .form input,
 .form textarea {
   border: 0;
-  border: 1.5px solid #2FBB89;
+  border: 1.5px solid #1fab89;
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 5px;
@@ -579,7 +584,7 @@ textarea {
 }
 
 #btn-submit {
-  background-color: #2FBB89;
+  background-color: #1fab89;
   color: #fff;
   font-size: 18px;
   border-radius: 16px;
@@ -648,7 +653,7 @@ textarea {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #2fbb89;
+  background-color: #1fab89;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -688,7 +693,7 @@ textarea {
 }
 
 .footer-col .social-links a:hover {
-  color: #2fbb89;
+  color: #1fab89;
   background-color: #ffffff;
 }
 
