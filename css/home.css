@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
 
 body {
   line-height: 1.5;
@@ -239,6 +241,7 @@ nav.fill ul li a:hover:after {
 }
 
 /* slider */
+
 
 /* ------------------footer------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -640,7 +643,7 @@ ul {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  margin: 10px 50px 10px 300px;
+  margin: 10px 50px 10px 250px;
   
 }
 
@@ -915,28 +918,4 @@ ul {
 }
 
 
-/* .founder-card {
-  width: 500px;
-  padding: 20px;
-  box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  border: 0.5px solid black;
-  flex: 0 0 30%;
-  margin-bottom: 20px;
-}
-
-.avatar-founder {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #ccc;
-  margin: 0 170px;
-
-}
-
-.avatar-founder img {
-  width: 100%;
-  height: auto;
-}
 

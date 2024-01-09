@@ -4,10 +4,9 @@
     <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <link rel="stylesheet" href="css/home.css" />
     <script src="script.js"></script>
     <script src="home.js"></script>
@@ -97,7 +96,9 @@
               data-en="The new Pa-Cang residential cluster is 3 km by road from Xoi bridge on Ho Chi Minh Road. The village is located on the banks of the gentle Dak-my River. Behind the village are the cloud-covered mountains with peaceful scenery. The sound of bubbling water from streams, the wind blowing through the trees, and the chirping of birds in the sky always make the space here full of natural vitality."
               data-jp="新しいパキャン住宅群は、ホーチミン道路のソイ橋から歩いて 3 km の場所にあります。 村は穏やかなダクミー川のほとりにあります。 村の後ろには雲に覆われた山々があり、のどかな風景が広がっています。 小川のせせらぎの音、木々を吹き抜ける風、そして空を飛ぶ鳥のさえずりが、ここの空間は常に自然の生命力に満ちています。"
               data-vn="Cụm dân cư Pà-Căng mới cách cầu Xơi đường Hồ Chí Minh 3km đường bộ. Làng nằm bên bờ con sông Dakmy hiền hòa và phía sau là những dãy núi mây phủ sớm chiều êm đềm nên thơ. Tiếng nước chảy róc rách từ những dòng suối, tiếng gió thổi xì xào qua những rặng cây, tiếng chim kêu líu lo trên bầu trời lúc nào cũng làm cho không gian nơi đây tràn đầy sức sống tự nhiên."
-            >
+            > <b>Time:</b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026) <br>
+              <b>Place:</b> Co-Tu village, Nam Giang district, Quang Nam province <br>
+              <b>Scope:</b> 30 families of the Co-Tu village <br> <br>
               The new Pa-Cang residential cluster is 3 km by road from Xoi
               bridge on Ho Chi Minh Road. The village is located on the banks of
               the gentle Dak-my River. Behind the village are the cloud-covered
@@ -108,10 +109,18 @@
             </p>
 
             <div class="progrress-container">
-              <div class="text"></div>
+              <div class="">
+                <b
+                  class="lang en jp vn"
+                  data-en="Budget: 300,000,000 VND (12,322 USD)"
+                  data-vn="Ngân sách: 300,000,000 VND (12,322 USD)"
+                  data-jp="予算: 300,000,000 VND (12,322 USD)"
+                  >Bugdet: 300,000,000 VND (12,322 USD)</b
+                >
+              </div>
               <div class="progress-bar">
-                <div class="progress-bar-fill" style="width: 50%">
-                  <div class="progress-bar-content">50%</div>
+                <div class="progress-bar-fill" style="width: 90%">
+                  <div class="progress-bar-content">90%</div>
                 </div>
               </div>
             </div>
@@ -132,7 +141,7 @@
                 <img
                   src="img/share.png"
                   alt=""
-                  onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                  onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
                 />
               </div>
 
@@ -191,16 +200,30 @@
           <div class="description">
             <p
               class="lang en jp vn"
-              data-en="Organic fertilizer is an important ingredient that determines crop quality and yield. The project aims to reuse domestic, livestock, poultry and agricultural waste as a source of manure; collected in and near the surrounding village. Gaining the knowledge and technology to apply the means for organic fertilizer from waste products will supply the manure to the village gardens and farms. Learning the process of such can also allow the means to run a small-scale business with an organic fertilizer factory within the village. 
+              data-en="Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
+              Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province
+              Scope: 30 families of the Pà-căng village
+              
+              Organic fertilizer is an important ingredient that determines crop quality and yield. The project aims to reuse domestic, livestock, poultry and agricultural waste as a source of manure; collected in and near the surrounding village. Gaining the knowledge and technology to apply the means for organic fertilizer from waste products will supply the manure to the village gardens and farms. Learning the process of such can also allow the means to run a small-scale business with an organic fertilizer factory within the village. 
               As a result, people would not only understand the process of such from waste, but also have quality fertilizer for their gardens at low cost. The people could also learn the process of running a business in the village. In addition, it contributes to making the environment in the village green and clean.
               "
-              data-jp="有機肥料は作物の品質と収量を決める重要な要素です。このプロジェクトは、村内の家畜や家禽の排泄物、農業廃棄物、家庭廃棄物を肥料源として再利用し、人々の庭や農業の経済モデルに供給することを目的としています。
+              data-jp="期間：2年間（2024年01月01日〜2026年01月01日）
+              場所：クアンナム省ナムザン地区カディコミューンパチャン村
+              対象範囲：パチャン村の30世帯
+              有機肥料は作物の品質と収量を決める重要な要素です。このプロジェクトは、村内の家畜や家禽の排泄物、農業廃棄物、家庭廃棄物を肥料源として再利用し、人々の庭や農業の経済モデルに供給することを目的としています。
               その結果、人々は廃棄物から有機肥料を作るプロセスを理解しました。人々は自分の庭に高品質の有機肥料を低コストで入手できます。また、村内の緑豊かな環境づくりにも貢献します。
               "
-              data-vn="Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. 
+              data-vn="Thời gian: 2 năm (01/01/2024 ~ 01/01/2026)
+              Địa điểm: Thôn Pà-căng, xã Cà-dy, huyện Nam Giang, tỉnh Quảng Nam
+              Phạm vi: 30 gia đình bản Pà-căng
+              Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. 
               Kết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.  
               "
             >
+            <b>Time:</b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026) <br>
+            <b>Place:</b> Co-Tu village, Nam Giang district, Quang Nam province <br>
+            <b>Scope:</b> 30 families of the Co-Tu village <br>
+
               Organic fertilizer is an important ingredient that determines crop
               quality and yield. The project aims to reuse domestic, livestock,
               poultry and agricultural waste as a source of manure; collected in
@@ -220,15 +243,15 @@
             <div class="">
               <b
                 class="lang en jp vn"
-                data-en="Budget: 215,400,000 VND (9,000 USD)"
-                data-vn="Ngân sách: 215,400,000 VND (9,000 USD)"
-                data-jp="予算: 215,400,000 VND (9,000 USD)"
-                >Bugdet: 215,400,000 VND (9,000 USD)</b
+                data-en="Budget: 596,000,000 VND (24,800 USD)"
+                data-vn="Ngân sách: 596,000,000 VND (24,800 USD)"
+                data-jp="予算: 596,000,000 VND (24,800 USD)"
+                >596,000,000 VND (24,800 USD)</b
               >
             </div>
             <div class="progress-bar">
-              <div class="progress-bar-fill" style="width: 50%">
-                <div class="progress-bar-content">50%</div>
+              <div class="progress-bar-fill" style="width: 70%">
+                <div class="progress-bar-content">70%</div>
               </div>
             </div>
           </div>
@@ -250,7 +273,7 @@
               <img
                 src="img/share.png"
                 alt=""
-                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
               />
             </div>
 
@@ -302,7 +325,9 @@
               "
               data-vn="Dự án này nhằm mục đích đồng hành và chia sẻ kỹ thuật chăn nuôi và rau hữu cơ bền vững với người dân trong làng. Các chuyên gia của dự án sẽ cùng người dân xây dựng các mô hình trồng trọt, chăn nuôi quy mô nhỏ tại thôn. Họ sẽ đến bản, cùng làm việc và chia sẻ trực tiếp với dân làng cách làm ruộng, để dân làng hiểu sâu và trực tiếp thực hành. Từ đó, người dân trong làng nắm vững được kỹ thuật và có thể tự xây dựng khu vườn riêng để cung cấp lương thực cho gia đình.  
               "
-            >
+            > <b>Time:</b> 5 years (Jan 01st, 2024 ~ Jan 01st, 2029) <br>
+              <b>Place:</b> Quang Nam province <br>
+              <b>Scope:</b> Organic fertilizer <br>
               Organic fertilizer is an important ingredient that determines crop
               quality and yield. The project aims to reuse domestic, livestock,
               poultry and agricultural waste as a source of manure; collected in
@@ -322,15 +347,15 @@
             <div class="">
               <b
                 class="lang en jp vn"
-                data-en="Budget: 215,400,000 VND (9,000 USD)"
-                data-vn="Ngân sách: 215,400,000 VND (9,000 USD)"
-                data-jp="予算: 215,400,000 VND (9,000 USD)"
-                >Bugdet: 215,400,000 VND (9,000 USD)</b
+                data-en="Budget:  100,000,000 VND (4,107 USD)"
+                data-vn="Ngân sách:  100,000,000 VND (4,107 USD)"
+                data-jp="予算:  100,000,000 VND (4,107 USD)"
+                >Bugdet: 100,000,000 VND (4,107 USD)</b
               >
             </div>
             <div class="progress-bar">
-              <div class="progress-bar-fill" style="width: 50%">
-                <div class="progress-bar-content">50%</div>
+              <div class="progress-bar-fill" style="width: 30%">
+                <div class="progress-bar-content">30%</div>
               </div>
             </div>
           </div>
@@ -351,7 +376,7 @@
               <img
                 src="img/share.png"
                 alt=""
-                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
               />
             </div>
 
@@ -408,7 +433,9 @@
               data-vn="Làng Pà-căng có 30 gia đình Cơ-tu, trong đó có 26 gia đình nghèo (thu nhập dưới 1.500.000 đồng/hộ/tháng hoặc 65 USD hộ/tháng). Mỗi gia đình có 4~6 người. Hàng ngày người dân vào rừng hoặc ra sông để tìm kiếm thức ăn hoặc đồ vật có thể bán được. Trong mùa mưa (tháng 9 ~ tháng 12), họ thường thiếu lương thực và quần áo.
               Mỗi gia đình có một mảnh đất rộng khoảng 500m2. Hiện tại nó gần như bị bỏ trống. Người dân trồng một số loại cây trồng và chăn nuôi theo thói quen cũ. Họ không được tiếp cận với khoa học công nghệ để sản xuất có hiệu quả. Phần lớn họ nói tiếng Cơ-tu. Tất cả người dân trong làng đều mong muốn được tiếp cận kỹ thuật canh tác để phát triển đất vườn của mình để lấy lương thực.  
               "
-            >
+            > <b>Time:</b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026) <br>
+              <b>Place:</b> Co-Tu village, Nam Giang district, Quang Nam province <br>
+              <b>Scope:</b> 30 families of the Co-Tu village <br>
               The Pa-cang village has 30 Co-tu families, of which 26 families
               are poor (income less than 1,500,000 VND/household/month or 65 USD
               household/month). Each family has 4~6 people. Every day the people
@@ -438,8 +465,8 @@
               >
             </div>
             <div class="progress-bar">
-              <div class="progress-bar-fill" style="width: 50%">
-                <div class="progress-bar-content">50%</div>
+              <div class="progress-bar-fill" style="width: 80%">
+                <div class="progress-bar-content">80%</div>
               </div>
             </div>
           </div>
@@ -460,7 +487,7 @@
               <img
                 src="img/share.png"
                 alt=""
-                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
               />
             </div>
 
@@ -514,7 +541,9 @@
               data-vn="Phân bón hữu cơ là thành phần quan trọng quyết định chất lượng và sản lượng cây trồng. Dự án nhằm hỗ trợ người dân trong làng xây dựng xưởng sản xuất phân hữu cơ từ chất thải gia súc gia cầm, rác thải nông nghiệp, rác thải gia đình trong làng để làm nguồn phân cung cấp cho các mô hình kinh tế vườn và trang trại của bà con. 
               Kết quả là bà con hiểu được quy trình làm phân hữu cơ từ rác thải. Bà con có phân bón hữu cơ chất lượng cho vườn của mình với chi phí thấp. Thêm vào đó,  góp phần làm cho môi trường trong làng xanh sạch đẹp.  
               "
-            >
+            > <b>Time:</b> 3 years (Jan 01st, 2024 ~ Jan 01st, 2027) <br>
+              <b>Place:</b> Quang Nam province <br>
+              <b>Scope:</b> Forest <br>
               Organic fertilizer is an important ingredient that determines crop
               quality and yield. The project aims to reuse domestic, livestock,
               poultry and agricultural waste as a source of manure; collected in
@@ -534,10 +563,10 @@
             <div class="">
               <b
                 class="lang en jp vn"
-                data-en="Budget: 215,400,000 VND (9,000 USD)"
-                data-vn="Ngân sách: 215,400,000 VND (9,000 USD)"
-                data-jp="予算: 215,400,000 VND (9,000 USD)"
-                >Bugdet: 215,400,000 VND (9,000 USD)</b
+                data-en="Budget: 113,200,000 VND (4,800 USD)"
+                data-vn="Ngân sách: 113,200,000 VND (4,800 USD)"
+                data-jp="予算: 113,200,000 VND (4,800 USD)"
+                >Bugdet: 113,200,000 VND (4,800 USD)</b
               >
             </div>
             <div class="progress-bar">
@@ -563,7 +592,7 @@
               <img
                 src="img/share.png"
                 alt=""
-                onclick="shareOnFacebook('http://127.0.0.1:5500/Home-Charity/home.html')"
+                onclick="copyShareLink('http://127.0.0.1:5500/Home-Charity/home.html')"
               />
             </div>
             <div class="btn-container">
@@ -593,13 +622,11 @@
             height="550px"
           />
           <div class="title">
-            <p
-              class="lang en jp vn"
-              data-en="Paint the streets to protect the environment"
-              data-jp="環境を守るために街路を作らない"
-              data-vn=" Vẽ đường phố giúp tăng tính thẩm mỹ cho đô thị"
-            >
-              Paint the streets to protect the environment
+            <p class="lang en jp vn"
+            data-en="Paint the streets to protect the environment"
+            data-jp="環境を守るために街路を作らない"
+            data-vn=" Vẽ đường phố giúp tăng tính thẩm mỹ cho đô thị">
+            Paint the streets to protect the environment
             </p>
           </div>
         </div>
@@ -611,15 +638,13 @@
             style="width: 100%"
             height="550px"
           />
-          <div class="title">
-            <p
-              class="lang en jp vn"
-              data-en="Support drinking water and food for the citywide running competition"
-              data-jp="環境を守るために街路を作らない"
-              data-vn="市内全域のランニング大会の飲料水と食料を支援する"
-            >
-              Hỗ trợ nước uống, thực phẩm cho giải chạy toàn thành phố
-            </p>
+          <div class="title">            
+            <p class="lang en jp vn"
+            data-en="Support drinking water and food for the citywide running competition"
+            data-jp="環境を守るために街路を作らない"
+            data-vn="市内全域のランニング大会の飲料水と食料を支援する">
+            Hỗ trợ nước uống, thực phẩm cho giải chạy toàn thành phố
+            </p>          
           </div>
         </div>
 
@@ -631,22 +656,22 @@
             height="550px"
           />
           <div class="title">
-            <p
-              class="lang en jp vn"
-              data-en="Support kid in the village"
-              data-jp="村の子供たちをサポート"
-              data-vn=" Hỗ trợ những đứa trẻ có hoàn cảnh khó khăn tại vùng quê"
-            >
-              Support kid in the village
+            <p class="lang en jp vn"
+            data-en="Support kid in the village"
+            data-jp="村の子供たちをサポート"
+            data-vn=" Hỗ trợ những đứa trẻ có hoàn cảnh khó khăn tại vùng quê">
+            Support kid in the village
             </p>
           </div>
         </div>
 
+        
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br />
 
+      
       <div style="text-align: center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -851,11 +876,9 @@
             class="lang en jp vn"
             data-en="Dinh Thi Dong Phuong"
             data-jp="ディン・ティ・ドン・フォン"
-            data-vn="Đinh Thị Đông Phương"
-          >
-            Dinh Thi Dong Phuong
-          </h2>
-
+            data-vn="Đinh Thị Đông Phương">
+            Dinh Thi Dong Phuong </h2>
+          <br>
           <p
             class="lang en jp vn"
             data-en="I was born and raised in a rural area of Quang Nam province. My childhood was filled with experiences with nature and love. My children and I played all kinds of games, including hide and seek, shooting arrows, shooting marbles, playing the leaf trumpet, playing checkers."
@@ -1057,6 +1080,28 @@
           "width=600,height=400"
         );
       }
+
+      function copyShareLink(link) {
+        // Tạo một thẻ textarea tạm thời để chứa đường link
+        var tempTextArea = document.createElement("textarea");
+        tempTextArea.value = link;
+        document.body.appendChild(tempTextArea);
+
+        // Chọn toàn bộ nội dung của thẻ textarea
+        tempTextArea.select();
+        tempTextArea.setSelectionRange(0, 99999); // Đối với một số trình duyệt
+
+        // Sao chép nội dung vào clipboard
+        document.execCommand("copy");
+
+        // Xóa thẻ textarea tạm thời
+        document.body.removeChild(tempTextArea);
+
+        // Thông báo cho người dùng biết rằng đã sao chép thành công
+        alert("Đã sao chép đường link vào clipboard!");
+      }
     </script>
+
+    
   </body>
 </html>
